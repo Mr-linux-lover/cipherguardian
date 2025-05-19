@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CipherGuardian</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Orbitron', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white">
+  <nav class="bg-gray-800 p-4 flex flex-col sm:flex-row justify-between items-center shadow-lg">
+    <h1 class="text-2xl font-bold text-teal-400 tracking-wider mb-2 sm:mb-0">CipherGuardian</h1>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="#home" class="hover:text-teal-300 transition">Home</a>
+      <a href="#about" class="hover:text-teal-300 transition">About Us</a>
+      <a href="#services" class="hover:text-teal-300 transition">Services</a>
+      <a href="#solutions" class="hover:text-teal-300 transition">Solutions</a>
+      <a href="#contact" class="hover:text-teal-300 transition">Contact</a>
+      <a href="#founders" class="hover:text-teal-300 transition">Founders</a>
+      <a href="#login" class="hover:text-teal-300 transition">Login</a>
+    </div>
+  </nav>
+
+  <section id="home" class="relative h-screen flex items-center justify-center text-center text-white bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d4?auto=format&fit=crop&w=1920&q=80');">
+    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+    <div class="relative z-10 px-6 sm:px-12">
+      <h2 class="text-5xl font-extrabold text-teal-400 mb-6 animate-pulse">Welcome to CipherGuardian</h2>
+      <p class="text-lg text-gray-300 max-w-2xl mx-auto">We are a cutting-edge cybersecurity company offering VAPT, WAPT, Network Security, and Cloud Security services. Our mission is to fortify your digital infrastructure with modern, scalable, and reliable security solutions.</p>
+      <a href="#contact" class="mt-6 inline-block bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold shadow-md">Get in Touch</a>
+    </div>
+  </section>
+
+  <section id="about" class="p-6 sm:p-12 bg-gray-800">
+    <h2 class="text-3xl font-bold text-teal-400 mb-4 text-center">About Us</h2>
+    <p class="text-gray-300 max-w-3xl mx-auto mb-4">CipherGuardian is a cybersecurity startup founded by professionals in ethical hacking, cloud architecture, and forensic investigations. With hands-on experience in both offense and defense, our mission is to help you understand, control, and mitigate digital threats before they cause harm.</p>
+    <ul class="text-gray-400 list-disc list-inside max-w-3xl mx-auto">
+      <li>Expertise in Red and Blue Teaming</li>
+      <li>Specialized in IoT and OT Security</li>
+      <li>Real-time Monitoring and Threat Intelligence</li>
+      <li>Compliance Support (ISO, SOC 2, GDPR)</li>
+    </ul>
+  </section>
+
+  <section id="services" class="p-6 sm:p-12">
+    <h2 class="text-3xl font-bold text-teal-400 mb-6 text-center">Our Services</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-teal-300 mb-2">VAPT</h3>
+        <p class="text-gray-400">Identify and exploit vulnerabilities in your systems to simulate real-world attacks and provide actionable reports.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-teal-300 mb-2">WAPT</h3>
+        <p class="text-gray-400">Thorough testing of your web applications against OWASP Top 10 and beyond, including business logic vulnerabilities.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-teal-300 mb-2">Network Security</h3>
+        <p class="text-gray-400">Configuration reviews, firewall auditing, and simulated attacks to identify blind spots in your internal and external networks.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold text-teal-300 mb-2">Cloud Services</h3>
+        <p class="text-gray-400">Secure your AWS, Azure, or GCP infrastructure with best practices, automated policies, and identity-based controls.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="solutions" class="p-6 sm:p-12 bg-gray-900">
+    <h2 class="text-3xl font-bold text-teal-400 mb-4 text-center">Our Solutions</h2>
+    <div class="max-w-4xl mx-auto text-gray-300 space-y-4">
+      <p>We develop custom solutions to meet your cybersecurity needs:</p>
+      <ul class="list-disc list-inside">
+        <li>SIEM and Log Management Integration (Wazuh, Splunk, ELK)</li>
+        <li>Advanced Keylogger & Malware Detection Tools</li>
+        <li>Email Phishing Simulation and Awareness Training</li>
+        <li>Blockchain-Based Security for Transactions</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="p-6 sm:p-12 bg-gray-800">
+    <h2 class="text-3xl font-bold text-teal-400 mb-4 text-center">Contact Us</h2>
+    <form id="contactForm" class="space-y-4 max-w-xl mx-auto">
+      <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-400" required>
+      <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-400" required>
+      <textarea placeholder="Your Message" class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-400" required></textarea>
+      <button type="submit" class="bg-teal-500 hover:bg-teal-600 transition px-6 py-3 rounded-lg text-white font-semibold w-full">Send via WhatsApp</button>
+    </form>
+  </section>
+
+  <section id="founders" class="p-6 sm:p-12">
+    <h2 class="text-3xl font-bold text-teal-400 mb-4 text-center">Founders</h2>
+    <p class="text-gray-300 max-w-3xl mx-auto mb-4">Our founding team includes certified professionals with years of industry experience in offensive and defensive security domains.</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold text-teal-300">Aarav Malhotra</h3>
+        <p class="text-gray-400">Red Team Lead | OSCP | Exploit Developer | 8+ years experience</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-xl shadow-md">
+        <h3 class="text-xl font-semibold text-teal-300">Neha Sharma</h3>
+        <p class="text-gray-400">Cloud Security Architect | AWS, Azure, GCP | DevSecOps Evangelist</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="login" class="p-6 sm:p-12 bg-gray-800">
+    <h2 class="text-3xl font-bold text-teal-400 mb-4 text-center">Login</h2>
+    <form id="loginForm" class="space-y-4 max-w-md mx-auto">
+      <input type="text" placeholder="Username" class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-400" required>
+      <input type="password" placeholder="Password" class="w-full p-3 rounded-lg bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-teal-400" required>
+      <button type="submit" class="bg-teal-500 hover:bg-teal-600 transition px-6 py-3 rounded-lg text-white font-semibold w-full">Login</button>
+    </form>
+  </section>
+
+  <footer class="text-center p-6 bg-gray-800 text-sm text-gray-400">
+    &copy; 2025 CipherGuardian. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const inputs = e.target.querySelectorAll('input, textarea');
+      const name = inputs[0].value;
+      const email = inputs[1].value;
+      const message = inputs[2].value;
+      const encodedMsg = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+      window.open(`https://wa.me/917047901774?text=${encodedMsg}`, '_blank');
+    });
+  </script>
+</body>
+</html>
